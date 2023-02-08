@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+   }
+
+  body {
+    background: var(--background);
+    color: var(--text-base);
+    display: flex;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  body, input, textarea, button{
+    font: 400 1rem 'poppins', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  #home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  #logo {
+    padding: 1rem;
+   }
+  
+   #form {
+  
+    margin: 1rem;
+    width: 25rem;
+    height: auto;
+
+    justify-self: center;
+   }
+
+  .login {
+    color: var(--text-title);
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  form {
+    
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+
+  form div p {
+   margin-bottom: 0.5rem;
+  }
+
+  .input {
+    background: var(--background);
+    border: 1px solid var(--text-base);
+    color: var(--text-base);
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 2.5rem;
+
+    
+  }
+
+  .input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+  }
+
+  #check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #check div {
+    align-items: center;
+  }
+
+  #check span {
+    color: var(--primary-color);
+  }
+
+  .check {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #submit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+    color: var(--primary-color);
+  }
+
+  button {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  
+
+
+
+ 
+
+  @media(min-width: 920px){
+
+    #home {
+      width: 50vw;
+      height: 100vh;
+    }
+
+    #homeimg {
+      width: 50vw;
+      height: 100vh;
+      background-image: url(assets/images/side-image.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #form {
+      padding: 1rem 2rem;
+      background-color: var(--form-background);
+    }
+  }
+
